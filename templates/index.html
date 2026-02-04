@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>House Price Predictor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>House Price Prediction</h1>
+
+    <form method="POST">
+
+    <div class="section-title">🏠 Property Details</div>
+    <div class="form-grid">
+        <input type="number" step="any" name="area" placeholder="Area (sqft)" required>
+        <input type="number" name="floorNum" placeholder="Floor Number" required>
+        <input type="number" name="bedRoom" placeholder="Bedrooms" required>
+        <input type="number" name="bathroom" placeholder="Bathrooms" required>
+        <input type="number" name="balcony" placeholder="Balconies" required>
+    </div>
+
+    <div class="section-title">🌆 Location & Lifestyle Ratings (1–5)</div>
+    <div class="form-grid">
+        <input type="number" min="1" max="5" step="0.1" name="Environment" placeholder="Environment" required>
+        <input type="number" min="1" max="5" step="0.1" name="Lifestyle" placeholder="Lifestyle" required>
+        <input type="number" min="1" max="5" step="0.1" name="Connectivity" placeholder="Connectivity" required>
+        <input type="number" min="1" max="5" step="0.1" name="Safety" placeholder="Safety" required>
+    </div>
+
+    <div class="section-title">🛋 Furnishing Score (0-300)</div>
+    <input type="number" min="0" max="300" name="Furnished_Weighted_Score" placeholder="Furnished Score (0–300)" required>
+
+    <div class="section-title">🧭 Facing Direction(N=0, N-E=1.5, E=3, S-E=4.5, S=6, S-W=7.5, W=9, N-W=10.5)</div>
+    <input type="number" step="any" name="facing_direction_clockwise" placeholder="Facing Direction (numeric encoding)" required>
+
+    <div class="section-title">➕ Extra Rooms</div>
+    <div class="checkbox-grid">
+        <label><input type="checkbox" name="has_servant_room" value="1"> Servant Room</label>
+        <label><input type="checkbox" name="has_store_room" value="1"> Store Room</label>
+        <label><input type="checkbox" name="has_pooja_room" value="1"> Pooja Room</label>
+        <label><input type="checkbox" name="has_study_room" value="1"> Study Room</label>
+        <label><input type="checkbox" name="has_others" value="1"> Other Room</label>
+    </div>
+
+    <button type="submit">Predict Price</button>
+</form>
+
+
+    {% if predicted_price %}
+    <h2 class="result">Estimated Price: ₹ {{ "%.2f"|format(predicted_price) }} Cr</h2>
+    {% endif %}
+
+
+    {% if error %}
+        <h3 class="error">Error: {{ error }}</h3>
+    {% endif %}
+</div>
+
+</body>
+</html>
