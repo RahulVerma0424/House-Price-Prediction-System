@@ -103,6 +103,7 @@ The ML model is integrated into a **Flask web app** where users can input proper
 # output
 
 <img width="951" height="457" alt="Image" src="https://github.com/user-attachments/assets/2b716410-fdf6-44ba-b150-408fc49bdc0c" />
+<img width="960" height="540" alt="Image" src="https://github.com/user-attachments/assets/a746e510-5f46-4c28-b653-de5a8b53d27f" />
 ---
 
 ## ⚙️ How to Run Locally
