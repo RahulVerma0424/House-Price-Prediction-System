@@ -1,4 +1,4 @@
-# CodTech-Task-3
+# CodTech-Task-3 
 
 *COMPANY*: CODTECH IT SOLUTIONS
 
@@ -12,7 +12,7 @@
 
 *MENTOR*: NEELA SANTHOSH
 
-# 🏠 House Price Prediction System
+# 🏠 House Price Prediction System 
 
 A Machine Learning powered web application that predicts house prices based on property features and amenities.
 
