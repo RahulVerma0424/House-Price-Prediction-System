@@ -23,7 +23,7 @@ This project combines **Data Science + Machine Learning + Web Deployment** into 
 ## 🚀 Live Demo
 
 🔗 Hugging Face Deployment:  
-*(Paste your Space link here)*
+*https://huggingface.co/spaces/RahulVerma24/house-price-prediction-system*
 
 ---
 
