@@ -123,3 +123,8 @@ Run Using Docker
 docker build -t house-price-app .
 docker run -p 7860:7860 house-price-app
 
+---
+
+# output
+
+<img width="951" height="457" alt="Image" src="https://github.com/user-attachments/assets/2b716410-fdf6-44ba-b150-408fc49bdc0c" />
